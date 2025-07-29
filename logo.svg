@@ -1,0 +1,5 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30 5L50 20V55H10V20L30 5Z" fill="#dc2626" stroke="#dc2626" stroke-width="2"/>
+  <path d="M15 25H45V50H15V25Z" fill="white"/>
+  <text x="30" y="40" text-anchor="middle" fill="#dc2626" font-family="Arial, sans-serif" font-size="16" font-weight="bold">SR</text>
+</svg>
