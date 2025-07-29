@@ -1,5 +1,6 @@
 import Hero from '../components/Hero'
 import ServicesGrid from '../components/ServicesGrid'
+import Partners from '../components/Partners'
 import PortfolioCard from '../components/PortfolioCard'
 import { Link } from 'react-router-dom'
 
@@ -121,62 +122,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-accent-900 mb-4">Our Partners</h2>
-            <p className="text-xl text-accent-600">
-              Trusted brands we work with to deliver quality interiors
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-            <div className="flex justify-center">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Godrej_Logo.svg/320px-Godrej_Logo.svg.png" 
-                alt="Godrej" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/H%C3%A4fele_logo.svg/320px-H%C3%A4fele_logo.svg.png" 
-                alt="Hafele" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Asian_Paints_Logo.svg/320px-Asian_Paints_Logo.svg.png" 
-                alt="Asian Paints" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Kajaria_Ceramics_logo.svg/320px-Kajaria_Ceramics_logo.svg.png" 
-                alt="Kajaria" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="https://seeklogo.com/images/H/hindware-logo-0C8B8B7F29-seeklogo.com.png" 
-                alt="Hindware" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src="https://seeklogo.com/images/C/century-plyboards-logo-8B5F5F5F5F-seeklogo.com.png" 
-                alt="Century Plyboards" 
-                className="h-16 object-contain grayscale hover:grayscale-0 transition-all duration-300"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Partners />
 
       {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">

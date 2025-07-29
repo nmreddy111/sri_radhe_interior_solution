@@ -56,43 +56,45 @@ const ServicesGrid = () => {
     <section className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12 lg:mb-16 px-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 lg:mb-4">
             Our <span className="text-red-600">Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto">
             Comprehensive interior design solutions for every space in your home or office
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 px-4 lg:px-0">
           {services.map((service) => (
-            <div key={service.id} className="bg-white rounded-xl overflow-hidden shadow-md card-hover">
+            <div key={service.id} className="bg-white rounded-xl overflow-hidden shadow-md card-hover glow-effect border border-gray-100 hover:border-red-200">
               {/* Image */}
-              <div className="relative h-48">
+              <div className="relative h-40 sm:h-48 overflow-hidden">
                 <img 
                   src={service.image} 
                   alt={service.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1">
-                  <span className="text-red-600 font-semibold text-sm">{service.price}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-3 right-3 bg-white/95 backdrop-blur-sm rounded-lg px-2 py-1 sm:px-3 sm:py-1 shadow-lg transform hover:scale-105 transition-all duration-300">
+                  <span className="text-red-600 font-semibold text-xs sm:text-sm">{service.price}</span>
                 </div>
               </div>
               
               {/* Content */}
-              <div className="p-6">
-                <div className="flex items-center mb-4">
-                  <span className="text-2xl mr-3">{service.icon}</span>
-                  <h3 className="text-xl font-semibold text-gray-900">{service.title}</h3>
+              <div className="p-4 sm:p-6">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  <span className="text-xl sm:text-2xl mr-2 sm:mr-3">{service.icon}</span>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900">{service.title}</h3>
                 </div>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <p className="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">{service.description}</p>
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center text-red-600 hover:text-red-700 font-medium"
+                  className="inline-flex items-center text-red-600 hover:text-red-700 font-medium text-sm sm:text-base group transition-all duration-300"
                 >
-                  Get Quote →
+                  Get Quote 
+                  <span className="ml-1 transform group-hover:translate-x-1 transition-transform duration-300">→</span>
                 </Link>
               </div>
             </div>

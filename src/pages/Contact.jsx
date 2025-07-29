@@ -187,11 +187,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Visit Us</h3>
-                    <p className="text-gray-600">
-                      123 Design Street,<br />
-                      Koramangala, 2nd Floor,<br />
-                      Bangalore, Karnataka - 560034
-                    </p>
+                    <a 
+                      href="https://maps.app.goo.gl/9uhLHcDm2hmjF2oq6" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-red-600 transition-colors cursor-pointer"
+                    >
+                      VP8H+6V8, Chokkasandra,<br />
+                      Bengaluru, Karnataka 560099,<br />
+                      India
+                    </a>
                   </div>
                 </div>
 
