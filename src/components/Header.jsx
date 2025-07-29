@@ -23,6 +23,7 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-sm lg:text-lg font-bold text-gray-900">Sri Radhe Interior Solutions</h1>
+              <p className="text-xs text-gray-600 hidden sm:block">Quality Really Matters</p>
             </div>
           </Link>
 
